@@ -1,0 +1,2 @@
+# population-game-py
+ This game simulates an alien village. As a player, you decide each round how many animals will be hunted by the villagers. The goal is to survive 5 rounds. You only know the current number of animals and villagers. However, the game dynamics are determined by other variables* that you can derive from your game experience to adjust your game strategy. (*e.g., regarding food stocks and population growth).
