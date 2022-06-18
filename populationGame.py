@@ -99,8 +99,8 @@ while True:  # everything that is necessary before the main game loop
     '''These are the variables that are used for calculating the amount 
     of people and animals each new round.'''
     hunting_amount = 0
-    # ADJUSTABLE: 1.5 a possible value, which I sometime adjust for testing
-    # purposes.
+    # ADJUSTABLE: 1.5 a possible value, which I sometime adjust for 
+    # testing purposes.
     animal_growth_factor = 1.5
     # ADJUSTABLE: 1.25 is a possible value, which I sometime adjust for
     # testing purposes.
@@ -110,7 +110,8 @@ while True:  # everything that is necessary before the main game loop
         '''The game is over if people cannot procreate, people have too 
         little food supply to survive or if there are too many animals 
         '''
-        if people_amount <= 1 or food_supply < people_amount or animal_amount >= 20 * people_amount:
+        if people_amount <= 1 or food_supply < people_amount or \
+            animal_amount >= 20 * people_amount:
             print(
                 "--- GAME OVER: The village people did unfortunately",
                 "not survive.\n"
