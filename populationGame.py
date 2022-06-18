@@ -6,7 +6,8 @@ import pyinputplus as pyip
 '''
 POTENTIAL TODOS
 
-'OPTIONAL TODO: alternative name for the animal: proconamals/ proconimals
+'OPTIONAL TODO: alternative name for the animal: 
+proconamals/ proconimals
 
 '''
 
@@ -31,7 +32,9 @@ starved.)))
 while True:  # everything that is necessary before the main game loop
     '''These are the values of the main variables at the beginning, 
     which can change each round.'''
-    people_amount = 50     # ADJUSTABLE: 50 is the starting value, which I sometime adjust for testing purposes.
+    people_amount = 50     # ADJUSTABLE: 50 is the starting value, which 
+    # I sometime adjust for testing purposes.
+    
     # ADJUSTABLE: 950 is the starting value, which I sometime adjust for
     # testing purposes.
     animal_amount = 950
@@ -44,7 +47,8 @@ while True:  # everything that is necessary before the main game loop
 
     '''These are the fixed values of the variables that do not change 
     throughout the game'''
-    round_number_max = 5  # ADJUSTABLE: The amount of maximum rounds until the game definitely ends.
+    round_number_max = 5  # ADJUSTABLE: The amount of maximum rounds 
+    # until the game definitely ends.
 
     # The welcome text is displayed.
     print('''
@@ -86,14 +90,14 @@ while True:  # everything that is necessary before the main game loop
     ------------------------------------------------------
     '''
 
-    '''These are the variables that are used for calculating the amount of
-    food that can be eaten within the next year (leftovers remain because
-    they are frozen as reserve each new round).'''
+    '''These are the variables that are used for calculating the amount 
+    of food that can be eaten within the next year (leftovers remain 
+    because they are frozen as reserve each new round).'''
     # ADJUSTABLE: You might want to have a bigger starting food supply below.
     food_supply = people_amount_start + 0
 
-    '''These are the variables that are used for calculating the amount of
-    people and animals each new round.'''
+    '''These are the variables that are used for calculating the amount 
+    of people and animals each new round.'''
     hunting_amount = 0
     # ADJUSTABLE: 1.5 a possible value, which I sometime adjust for testing
     # purposes.
@@ -103,8 +107,9 @@ while True:  # everything that is necessary before the main game loop
     people_growth_factor = 1.25
 
     while True:  # Main game loop
-        '''The game is over if people cannot procreate, people have too little food supply to survive
-        or if there are too many animals '''
+        '''The game is over if people cannot procreate, people have too 
+        little food supply to survive or if there are too many animals 
+        '''
         if people_amount <= 1 or food_supply < people_amount or animal_amount >= 20 * people_amount:
             print('''--- GAME OVER: The village people did unfortunately not survive. You probably need to adjust your strategy the next time. ---''')
             # ToDo: adjust the uppper print-statement so that it is nice to
@@ -140,8 +145,9 @@ while True:  # everything that is necessary before the main game loop
         food_supply = food_supply - people_amount
         food_supply = food_supply + hunting_amount
 
-        '''ADJUSTABLE: The people_growth_factor varies, because the people procreate more
-        when they know there is more than enough food.'''
+        '''ADJUSTABLE: The people_growth_factor varies, because the 
+        people procreate more when they know there is more than enough 
+        food.'''
         if food_supply >= 2 * people_amount:
             people_growth_factor = people_growth_factor * 2
 
@@ -152,9 +158,9 @@ while True:  # everything that is necessary before the main game loop
         print("1 year has past: Now the village has", int(people_amount),
               "inhabitants and", int(animal_amount), "proconimals exist.")
 
-    '''TODO_Get rid of the follwing  break-statement as soon as Game is finished.
-    If I get rid of it before the game will often exit because of an eternal loop which raises
-    the exit-condition at some point'''
+    '''TODO_Get rid of the follwing  break-statement as soon as Game is 
+    finished. If I get rid of it before the game will often exit because 
+    of an eternal loop which raises the exit-condition at some point'''
     # break
 
     # User can make another calculation or quit the game
@@ -171,8 +177,8 @@ while True:  # everything that is necessary before the main game loop
         print("Thanks for playing!")
         sys.exit()
 
-    '''(((OPTIONAL-TODO: Tips: Give player the option to receive 1 out of X tips.
-    Perhaps make a dictionary with X tips and give multiple options for input
-    (with pyIpPlus-Module) and link them to the dictionary like I did in
-    CountryComparisonProgram))).
+    '''(((OPTIONAL-TODO: Tips: Give player the option to receive 1 out 
+    of X tips. Perhaps make a dictionary with X tips and give multiple 
+    options for input (with pyIpPlus-Module) and link them to the 
+    dictionary like I did in CountryComparisonProgram))).
     '''
