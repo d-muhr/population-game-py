@@ -112,10 +112,13 @@ while True:  # everything that is necessary before the main game loop
         '''
         if people_amount <= 1 or food_supply < people_amount or animal_amount >= 20 * people_amount:
             print('''--- GAME OVER: The village people did unfortunately not survive. You probably need to adjust your strategy the next time. ---''')
-            # ToDo: adjust the uppper print-statement so that it is nice to
-            # read but not 1 line in the script.
-            '''(((OPTIONAL TODO: I might add something like "or animal_amount < people_growth_factor * people_amount" (because the people should be able to survive a 6th round)
-            but this makes the game dynamics even more complicated which is why I will currently not implement it. 2.5.22)))'''
+            # ToDo: adjust the uppper print-statement so that it is nice 
+            # to read but not 1 line in the script.
+            '''(((OPTIONAL TODO: I might add something like 
+            "or animal_amount < people_growth_factor * people_amount" 
+            (because the people should be able to survive a 6th round)
+            but this makes the game dynamics even more complicated which
+            is why I will currently not implement it. 2.5.22)))'''
             break
 
         # condition for winning the game
