@@ -111,7 +111,11 @@ while True:  # everything that is necessary before the main game loop
         little food supply to survive or if there are too many animals 
         '''
         if people_amount <= 1 or food_supply < people_amount or animal_amount >= 20 * people_amount:
-            print('''--- GAME OVER: The village people did unfortunately not survive. You probably need to adjust your strategy the next time. ---''')
+            print(
+                "--- GAME OVER: The village people did unfortunately",
+                "not survive.\n"
+                "You probably need to adjust your strategy the next",
+                "time. ---")
             # ToDo: adjust the uppper print-statement so that it is nice 
             # to read but not 1 line in the script.
             '''(((OPTIONAL TODO: I might add something like 
