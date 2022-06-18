@@ -50,6 +50,9 @@ while True:  # everything that is necessary before the main game loop
     round_number_max = 5  # ADJUSTABLE: The amount of maximum rounds 
     # until the game definitely ends.
 
+    #TODO: Adjust the welcome text below for PEB8 by still having a
+    # useful structure of the text.
+
     # The welcome text is displayed.
     print('''
     ---P R O C O N I M A L S---
