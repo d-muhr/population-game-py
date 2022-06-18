@@ -12,9 +12,10 @@ POTENTIAL TODOS
 
 
 '''NOTES
-- There are several aspects of this script that can be adjusted to change the game dynamics
-and therefore the strategy the player has to make use of. You can find the most important
-ones when you look for "ADJUSTABLE" in the script.
+- There are several aspects of this script that can be adjusted to 
+change the game dynamics and therefore the strategy the player has to 
+make use of. You can find the most important ones when you look for 
+"ADJUSTABLE" in the script.
 
 (((- When the inhabitants need e.g. 1 animal per person for 1 year it is
 calculated backwards and still makes sense. The extra food already
@@ -28,21 +29,21 @@ starved.)))
 
 
 while True:  # everything that is necessary before the main game loop
-    '''These are the values of the main variables at the beginning, which can change
-    each round.'''
+    '''These are the values of the main variables at the beginning, 
+    which can change each round.'''
     people_amount = 50     # ADJUSTABLE: 50 is the starting value, which I sometime adjust for testing purposes.
     # ADJUSTABLE: 950 is the starting value, which I sometime adjust for
     # testing purposes.
     animal_amount = 950
     round_number = 0
 
-    '''The follwoing 2 variables are for the Welcome-text and the message for the user when the
-    game is won.'''
+    '''The follwoing 2 variables are for the Welcome-text and the 
+    message for the user when the game is won.'''
     people_amount_start = people_amount
     animal_amount_start = animal_amount
 
-    '''These are the fixed values of the variables that do not change throughout
-    the game'''
+    '''These are the fixed values of the variables that do not change 
+    throughout the game'''
     round_number_max = 5  # ADJUSTABLE: The amount of maximum rounds until the game definitely ends.
 
     # The welcome text is displayed.
@@ -69,13 +70,21 @@ while True:  # everything that is necessary before the main game loop
     ''')
 
     '''
-    OPTIONAL TODO
-    - I might reuse the old sentence which was "If there are too many proconimals, the village does not survive because they get attacked.'''
-    ''' If there are not enough proconimals, the village does not survive because they starve to death. '''
+    ------------------------------------------------------
+    OPTIONAL TODOs
+    - I might reuse the old sentence which was "If there are too many 
+    proconimals, the village does not survive because they get 
+    attacked.
+    
+    If there are not enough proconimals, the village does not 
+    survive because they starve to death. 
 
-    '''(((OPTIONAL-ToDo: maybe add something like the following to the welcome-message:
-    You (the Player) do not know how exactly the decision influences these numbers
-    but each round you get a tip on how the numbers are calculated._TODO)))'''
+    maybe add something like the following to the welcome-message:
+    You (the Player) do not know how exactly the decision influences 
+    these numbers but each round you get a tip on how the numbers are 
+    calculated._TODO)))
+    ------------------------------------------------------
+    '''
 
     '''These are the variables that are used for calculating the amount of
     food that can be eaten within the next year (leftovers remain because
